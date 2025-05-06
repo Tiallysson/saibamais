@@ -1,0 +1,90 @@
+body {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5;
+    color: #333;
+    height: 100dvh;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #e91e63;
+    color: white;
+    text-align: center;
+    padding: 1.2em;
+}
+
+.container {
+    flex: 1;
+    padding: 1.5em;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+#p-one {
+    font-size: 1.1rem;
+}
+
+.steps {
+    margin-top: 1em;
+}
+
+.steps li {
+    margin: 0.5em 0;
+}
+
+.insta-links {
+    margin-top: 1em;
+}
+
+.insta-links a {
+    display: block;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    padding: 0.8em;
+    margin: 0.5em 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-image: url(/resources/flor.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    position: relative;
+    min-height: 250px; /* Ajuste conforme necessário */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0.3em 0;
+    position: relative; /* Isso garante que o texto fique acima da imagem de fundo */
+}
