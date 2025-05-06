@@ -16,10 +16,24 @@ body {
 }
 
 header {
-    background-color: #e91e63;
+    position: relative;
     color: white;
     text-align: center;
     padding: 1.2em;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('./resources/flor.png');
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
+    z-index: -1;
+    min-height: 150px;
 }
 
 .container {
@@ -77,7 +91,8 @@ footer {
     padding: 1em;
     font-size: 0.9em;
     position: relative;
-    min-height: 230px; /* Ajuste conforme necessário */
+    min-height: 200px;
+    /* Ajuste conforme necessário */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +101,8 @@ footer {
 
 footer p {
     margin: 0.3em 0;
-    position: relative; /* Isso garante que o texto fique acima da imagem de fundo */
+    position: relative;
+    /* Isso garante que o texto fique acima da imagem de fundo */
 }
 
 .contact {
@@ -100,10 +116,14 @@ footer p {
         padding: 0.5em;
         min-height: 430px;
     }
-    
+
     .contact {
         font-size: clamp(14px, 4vw, 18px);
         margin-top: 1rem;
+    }
+
+    header {
+        min-height: 400px;
     }
 }
 
@@ -113,7 +133,7 @@ footer p {
         padding: 0.5em;
         min-height: 435px;
     }
-    
+
     .contact {
         font-size: clamp(14px, 4vw, 18px);
         margin-top: 1rem;
