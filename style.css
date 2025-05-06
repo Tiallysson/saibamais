@@ -68,7 +68,7 @@ p {
 }
 
 footer {
-    background-image: url(https://raw.githubusercontent.com/Tiallysson/saibamais/refs/heads/main/resources/flor.png);
+    background-image: url('./resources/flor.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
