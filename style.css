@@ -110,6 +110,13 @@ footer p {
     margin-top: 1.5rem;
 }
 
+#wa {
+    color: white;
+    background-color: #f76e9c;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 @media (min-width: 768px) {
     footer {
         min-height: min(200px, 25dvh);
